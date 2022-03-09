@@ -4,7 +4,7 @@ export default function Todos({ todos = [] }) {
   return (
     <ol>
       {todos.map(todo => (
-        <TodoItem key={todo.key} todo={todo} />
+        <TodoItem key={todo.id} todo={todo} />
       ))}
     </ol>
   );

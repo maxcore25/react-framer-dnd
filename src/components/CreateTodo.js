@@ -21,7 +21,7 @@ export default function CreateTodo({ onCreate }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} autoComplete={false}>
+    <form onSubmit={handleSubmit} autoComplete='false'>
       <input type='text' placeholder='New todo' name='todo' />
       <input type='submit' value='Add Todo' />
     </form>
