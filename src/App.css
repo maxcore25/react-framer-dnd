@@ -10,6 +10,7 @@
 
 li {
   border: 1px solid #000;
+  background: #fff;
   list-style: none;
   padding: 10px;
   margin: 20px 0;
