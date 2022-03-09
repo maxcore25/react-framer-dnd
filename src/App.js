@@ -12,10 +12,14 @@ const defaultTodos = [
 function App() {
   const [todos, setTodos] = useState(defaultTodos);
 
+  const onRemove = id => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  };
+
   return (
     <div className='App'>
       <CreateTodo onCreate={setTodos} />
-      <Todos todos={todos} setTodos={setTodos} />
+      <Todos todos={todos} setTodos={setTodos} onRemove={onRemove} />
     </div>
   );
 }
